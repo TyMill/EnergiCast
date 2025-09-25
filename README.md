@@ -82,7 +82,7 @@ energicast/
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Authors
 Created by 
 - **Dr Tymoteusz Miller, University of Szczecin**,
 - **Dr inz. Ewelina Kostecka, Maritime University of Szczecin**.
