@@ -1,10 +1,11 @@
 # EnergiCast
 
 [![CI](https://github.com/TyMill/energicast/actions/workflows/ci.yml/badge.svg)](https://github.com/TyMill/energicast/actions/workflows/ci.yml)
-[![Docs](https://github.com/TyMill/energicast/actions/workflows/docs.yml/badge.svg)](https://github.com/TyMill/energicast/actions/workflows/docs.yml)
+[![Docs](https://img.shields.io/badge/docs-online-brightgreen.svg)](https://tymill.github.io/EnergiCast/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-![Python Version](https://img.shields.io/badge/python-3.9%2B-blue)
+[![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://github.com/TyMill/EnergiCast/blob/main/pyproject.toml)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/TyMill/energicast)](https://github.com/TyMill/energicast/releases)
+
 
 **EnergiCast** is a domain‑specific Python library for energy forecasting (load, PV, wind, prices) that combines:
 - ⚡ **Domain‑aware AutoML** with hierarchical reconciliation and energy‑weighted cost metrics,
