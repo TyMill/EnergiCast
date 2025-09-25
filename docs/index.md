@@ -56,8 +56,6 @@ metryki kosztowe, pipeline treningowy i eksport modeli.
 
 ---
 
-## Architektura (skrót)
-
 ## Architektura w skrócie
 
 ```text
