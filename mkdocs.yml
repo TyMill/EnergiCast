@@ -1,0 +1,60 @@
+site_name: EnergiCast Documentation
+repo_url: https://github.com/TyMill/energicast
+repo_name: TyMill/energicast
+edit_uri: ""
+theme:
+  name: material
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_root_heading: true
+            show_source: false
+            show_signature: true
+            separate_signature: true
+            show_bases: true
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.superfences
+  - pymdownx.details
+nav:
+  - Wprowadzenie: index.md
+  - Szybki start: getting-started.md
+  - Przewodniki:
+      - Pipeline: guides/pipeline.md
+      - Modele: guides/models.md
+      - AutoML i walidacja: guides/automl.md
+      - Cechy i dane: guides/features.md
+      - Imputacja: guides/impute.md
+      - Metryki: guides/metrics.md
+      - Backtest: guides/backtest.md
+      - CLI: guides/cli.md
+      - Deploy/Export: guides/deploy.md
+      - Hierarchie i rekonsyliacja: guides/hierarchy.md
+      - Scenariusze pogody: guides/scenarios.md
+      - Benchmarki: guides/benchmarks.md
+      - Wkład/Contributing: contributing.md
+  - API Reference:
+      - Pipeline: reference/pipeline.md
+      - Models:
+          - XGB: reference/models_xgb.md
+          - ARIMA/ETS: reference/models_arima.md
+          - TFT: reference/models_tft.md
+      - AutoML:
+          - Validation: reference/automl_validation.md
+          - Search: reference/automl_search.md
+      - Features: reference/features_energy.md
+      - Data/PV: reference/data_pv.md
+      - Impute: reference/impute.md
+      - Metrics: reference/metrics.md
+      - Backtest: reference/backtest.md
+      - CLI: reference/cli.md
+      - Deploy: reference/deploy_export.md

@@ -1,0 +1,3 @@
+# Metrics
+
+::: energicast.metrics.metrics

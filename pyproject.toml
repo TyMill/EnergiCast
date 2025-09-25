@@ -1,0 +1,75 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "energicast"
+version = "0.0.1"
+description = "Domain-specific AutoML library for energy forecasting with physics–ML hybrids and synthetic gap filling"
+requires-python = ">=3.9"
+authors = [
+  { name = "dr Tymoteusz Miller" },
+  { name = "dr inż. Ewelina Kostecka" },
+]
+keywords = [
+  "energy forecasting",
+  "automl",
+  "machine learning",
+  "time series",
+]
+dependencies = [
+  "pandas>=2.0",
+  "numpy>=1.23",
+  "scikit-learn>=1.3",
+  "xgboost>=1.7",
+  "statsforecast>=1.7.3",
+  "pydantic>=2.6",
+  "typer>=0.12",
+  "rich>=13.7",
+  "pvlib>=0.10",
+  "pyarrow>=14",
+  "pyyaml>=6",
+  "optuna>=3.4",
+  "prophet>=1.1.5; platform_machine != 'arm64'",
+  "torch>=2.2; platform_machine != 'arm64'",
+  "pytorch-lightning>=2.4; platform_machine != 'arm64'",
+  "matplotlib>=3.7",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F"]
+ignore = ["E203", "E266"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-q"
+testpaths = ["tests"]
+
+[project.optional-dependencies]
+dev = [
+  "black>=23.0",
+  "ruff>=0.2",
+  "pytest>=7.0",
+]
+docs = [
+  "mkdocs>=1.5",
+  "mkdocs-material",
+  "mkdocstrings",
+  "mkdocstrings-python",
+  "pymdown-extensions",
+]
