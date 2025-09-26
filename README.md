@@ -7,6 +7,7 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/TyMill/energicast)](https://github.com/TyMill/energicast/releases)
 [![PyPI version](https://img.shields.io/pypi/v/smartbuildsim)](https://pypi.org/project/energicast/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17187638.svg)](https://doi.org/10.5281/zenodo.17201784)
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/energicast?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/energicast)
 
 
 **EnergiCast** is a domain‑specific Python library for energy forecasting (load, PV, wind, prices) that combines:
